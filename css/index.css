@@ -1,0 +1,424 @@
+@charset "UTF-8";
+
+
+.kazurog a{
+  font-family: "Monotype Corsiva";
+}
+/*ローディング中に表示するgif*/
+#loading 
+{
+      background: #fff;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index: 10;
+}
+#loading img 
+{	
+      background: #fff;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: 10;
+}
+
+/*全体設定完了*/
+html{
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.7;
+}
+body{
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+/*box*/
+
+.box{
+  border: 7px groove #2aacd8;
+  border-radius: 10px;
+  display: flex;
+}
+.time{
+  margin-left: 20;
+}
+.box-image{
+  padding-left: 10;
+  padding-top: 10;
+  padding-right: 10;
+}
+.content-text{
+margin-top: 20;
+margin-left: 20;
+text-align:left;
+}
+.content-text a{
+color: #2aacd8;
+text-decoration: none;
+}
+
+.detail{  
+text-align: left;
+margin-left: 20;
+}
+.detail a{
+color: black;
+text-decoration: none;
+}
+.box2{
+border: 7px groove #2aacd8;
+border-radius: 10px;
+margin: 0 auto;
+}
+.box2 a{
+  text-decoration: none;
+  color: black;
+}
+.content-text2{
+  text-align: left;
+  margin-left: 18;
+}
+.content-text2 a{
+  color: #2aacd8;
+}
+.content-text2 a:hover{
+  color: #2aacd8;
+}
+.detail2 {
+  text-align: left;
+  margin-left: 10;
+}
+/*パソコンサイズ　レスポンシブ*/
+@media (min-width:1025px){
+.div{
+   width: 45%;
+}
+.span{
+    width: 55%;
+}
+.container{
+    display: flex;
+}
+main{
+    width: 50%;
+    margin-left: 60;
+}
+aside{
+    width: 45%;
+    margin-top: 200;
+    margin-left: 60;
+}
+.genre li{
+    margin-left: 200;
+}
+.genre a {
+  font-size: 20;
+}
+.sub-intro a{
+  font-size: 20;
+}
+.slide{
+  width: 75%;
+}
+.box{
+  width: 90%;
+  height: 250;
+  margin: 0 auto;
+}
+.content-text{
+  font-size: 26;
+}
+.content-text a{
+  font-size: 18;
+}
+.detail a{
+  font-size: 14;
+}
+
+/*よく読まれている記事*/
+.sub-intro{
+  text-align: center;
+  margin-top: 40;
+}
+.sub-intro a{
+  color: #2aacd8;
+  font-size: 25;
+}
+.box2{
+  width: 80%;
+  height: 220;
+  display: flex;
+  margin: 0 auto;
+}
+.content-text2{
+  margin-top: 20;
+}
+.content-text2 a{
+  font-size:18 ;
+}
+.detail2 {
+  font-size: 14;
+}
+}
+
+/*小さいサイズ　レスポンシブ*/
+@media(max-width:1024px){
+main{
+  width: 91.5%;
+  margin-left: 40;
+}
+.genre li{
+    margin-left: 250;
+}
+.genre a {
+  font-size: 30;
+}
+.sub-intro a{
+  color: #2aacd8;
+  font-size: 35;
+}
+.slide{
+  width: 92.5%;
+}
+/*最新コンテンツの編集*/
+
+.box{
+  width: 97%;
+  height: 290;
+}
+.content-text{
+  font-size: 25;
+  padding: 5;
+}
+.content-text a{
+  margin-left: 40;
+  font-size: 30;
+}
+.detail{
+  padding: 5;
+}
+.detail a{
+  margin-left: 40;
+  font-size: 25;
+}
+.time{
+    font-size: 20;
+}
+
+/*よく読まれている記事*/
+.sub-intro{
+  text-align: center;
+  margin-top: 40;
+}
+.sub-intro a{
+  color: #2aacd8;
+  font-size: 35;
+}
+.box2{
+  width: 88%;
+  height: 270;
+  display: flex;
+}
+.content-text2{
+  font-size: 18;
+  margin-top: 20;
+}
+.content-text2 a{
+  font-size:30 ;
+}
+.detail2 {
+  font-size: 20;
+}
+}
+
+/*ヘッダー*/
+.page-header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #2aacd8;
+  width: ;
+}
+.page-header h1{
+  font-size: 45;
+  margin-top: 35;
+  margin-left: 100;
+}
+.page-header a{
+  color: white;
+  text-decoration: none;
+}
+.page-header li{
+  font-size: 20;
+  list-style: none;
+  text-decoration-line: none;
+}
+.main-nav{
+  display: flex;
+}
+.main-nav a{
+  text-decoration: none;
+}
+.main-nav li{
+  margin-right: 60;
+  font-size: 25;
+  list-style: none;
+  margin-top: 35;
+  margin-right: 40;
+}
+
+/*自動スライド*/
+.slide {
+  margin: 0 auto;
+  padding: 35px;
+  color: #333;
+  height: 200;
+}
+.slick-slide {
+  text-align: center;
+  color: #419be0;
+  margin: 0 27;
+}  
+.whole-item{
+  padding-right: 20;
+  padding-left: 20;
+}
+.whole-item a{
+  font-size: 16;
+  color:  #2aacd8;
+  text-decoration: none;
+}
+.img a{
+  font-size: 25;
+} 
+/*矢印アイコン*/
+.arrow{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+.arrow::before,
+.arrow::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+.sample1::before{
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #419be0;
+}
+.sample1::after{
+    left: 5px;
+    box-sizing: border-box;
+    width: 3px;
+    height: 3px;
+    border: 3px solid transparent;
+    border-left: 3px solid #fff;
+}
+/*トップページ*/
+h1{
+    font-size: 36;
+    color: #2aacd8;
+    margin-top: 20;
+    text-align: center;
+}
+
+#scroll-top a{
+  color:#2aacd8;
+}
+
+/*フッターの編集*/
+footer{
+  background-color:  #2aacd8;
+  position: absolute;
+  margin-top: 20;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+footer p{
+  color:white;
+  text-align: center;
+  text-decoration-line: overline;
+}
+.footer-nav a{
+  color: white;
+  font-size: 20;
+}
+.footer-nav li{
+  list-style: none;
+  margin-top: 20;
+}
+h3{
+  background-color: #7bcae4;
+  text-align: center;
+  color: white;
+}
+.small a{
+  font-size: 10;
+}
+
+/*カテゴリー*/
+.category{
+    background-color: #2aacd8;
+    color: white;
+    border: 2px black 0.5;
+    width: 300;
+    margin-top: 40;
+    margin: 0 auto;
+}
+.category a {
+  font-size: 30;
+}
+h2 .category{
+    padding:0 auto;
+    font-size: 35;
+}
+.genre li{
+    list-style: none;
+    margin-top: 20;
+    font-size: 30;
+    text-align: justify;
+}
+
+/*写真の編集*/
+.prof{
+    margin-top: 60;
+    text-align: center;
+}
+.myname a{
+    color: black;
+    font-size: 20;
+    margin-top: 10;
+    text-align: center;
+    text-decoration: none;
+}
+.intro a{
+    color: black;
+    font-size: 18;
+    margin-top: 5;
+    text-align: center;
+    text-decoration: none;
+}

@@ -1,0 +1,115 @@
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>イオンの事業報告を考まとめてみた</title>
+        <meta name="description" content="イオンの事業報告を考まとめてみた">
+        <link rel="stylesheet" href="../style_t.css">
+    </head>
+
+    <body>
+      <div id="loading">
+        <img src="../images/loading.gif">
+      </div>
+
+      <header class="page-header" >
+        <h1 class="blog-name">
+          <a href="../index.html">KAZUROG</a>
+        </h1>
+        
+        <nav>
+          <ul class="main-nav" >
+           <li><a href="../index.html">ホーム</a></li>
+           <li><a href="../contact.html">お問い合わせ</a></li>
+           <li><a href="../writer.html">ライター</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+        <div class="container">
+        <article>
+
+          <div class="left">
+            <div class="theme">
+            <h1>2020年度株主総会</h1>
+            </div>
+            
+            <div class="edit-time">
+            <p>2020/5/22</p>
+            </div>
+            <div class="immage">
+                    <img src='images/logo/aeon_logo.png' width="400px" height="200px"></a>
+            </div>
+
+            <div class="pre-index">
+              <p>イオンの株主総会の内容をまとめてみた</p>
+      　　  <br>
+            　<p>イオン株主であればオンラインで株主総会を視聴できたため、簡単に内容をまとめていきます。               
+              </p>   
+            </div>
+
+          <div class="index">
+            <h2>目次</h2>
+            <ul>
+                <li>1 株主総会とは</li>
+                <li>2 事業報告</li>
+                <li>3 デジタルシフト</li>
+                <li>4 リージョナルシフト</li>
+                <li>5 アジアシフト</li>
+                <li>6 業績報告</li>
+                <li>新型コロナウイルスの影響</li>
+                <li>7 質疑応答</li>
+                <li>8 感想</li>
+            </ul>
+           </div>
+
+           <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run-prettify.js"></script>
+
+           <pre><code>
+            import pandas as pd
+            ##グラフ使用時に日本語を使用可能
+            import japanize_matplotlib 
+            import matplotlib.pyplot as plt
+            
+            
+            
+            
+            
+            ##変数の初期化
+            data_year=[]
+            columns_1=[]
+            columns_2=[]
+            data_list_p=[]
+            
+            data=pd.read_csv('aeon_zigyou_profit.csv',encoding="sjis",header=0)
+            print(data)
+            
+            ##必要な列を変数でリスト化
+            data_year=data["年"]
+            ##変更点1
+            columns_1=data["サービス・専門店"]
+            columns_2=data["営業利益"]
+            
+            
+            ##計算
+            for i in range(len(data_year)):
+                x=columns_1[i]/columns_2[i]
+                x=x*100
+                data_list_p.append(x)
+            #print(data_list_p)
+            
+            ##グラフの作成
+            fig=plt.figure()
+            plt.plot(data_year,data_list_p)
+            plt.xticks(data_year)
+            plt.xlabel("Year",fontsize=15)
+            plt.ylabel("%",fontsize=15)
+            plt.tick_params(labelsize=15)
+            ##変更点2
+            plt.title("サービス・専門店営業利益率",fontsize=18)
+            plt.show()
+            
+            ##セーブ (変更点3)
+            #fig.savefig("サービス・専門店営業利益率.jpg")
+           </code></pre>

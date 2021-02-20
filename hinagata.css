@@ -1,0 +1,532 @@
+@charset "UTF-8";
+
+/*ローディング中に表示するgif*/
+#loading 
+{
+background: #fff;
+height: 100%;
+width: 100%;
+position: fixed;
+top: 0px;
+left: 0px;
+z-index: 10;
+}
+#loading img 
+{	
+background: #fff;
+position: fixed;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+z-index: 10;
+}
+
+/*全体設定完了*/
+html{
+font-family: 'Noto Sans JP', sans-serif;
+line-height: 1.7;
+}
+body{
+margin: 0;
+font-family: 'Noto Sans JP', sans-serif;
+text-align: center;
+}
+
+a{
+text-decoration: none;
+}
+img{
+max-width: 100%;
+}
+
+/*パソコンサイズ　レスポンシブ*/
+@media (min-width:1025px){
+.container{
+display: flex;
+}
+main{
+width: 62%;
+margin-left: 60;
+}
+aside{
+width: 35%;
+margin-top: 200;
+margin-left: 60;
+}
+.genre li{
+margin-left: 100;
+}
+.genre a {
+font-size: 20;
+}
+.sub-intro a{
+font-size: 20;
+}
+.box{
+width: 70%;
+}
+/*最新コンテンツの編集*/
+.box{
+border: 2px groove #2aacd8;
+width: 90%;
+height: 250;
+display: flex;
+margin: 0 auto;
+}
+.content-text{
+font-size: 26;
+margin-top: 20;
+text-align: left;
+}
+.content-text a{
+color:#2aacd8;
+text-align: left;
+font-size: 20;
+}
+.content-text a:hover{
+color: #551a55;
+}
+.content-text a:hover{
+color: #2aacd8;
+}
+.detail{
+text-align: left;
+}
+.detail a{
+text-align: left;
+font-size: 16;
+color: black;
+}
+
+/*よく読まれている記事*/
+.sub-intro{
+text-align: center;
+margin-top: 40;
+}
+.sub-intro a{
+color: #2aacd8;
+}
+.box2{
+border: 2px groove #2aacd8;
+width: 80%;
+height: 220;
+display: flex;
+margin: 0 auto;
+}
+.box2 a{
+text-decoration: none;
+color: black;
+}
+.content-text2{
+margin-top: 20;
+text-align: left;
+}
+.content-text2 a{
+color: #2aacd8;
+font-size:18;
+}
+.detail2 {
+text-align: left;
+}
+.detail2 a{
+    font-size: 12;
+}
+}
+
+/*小さいサイズ　レスポンシブ*/
+@media(max-width:1024px){
+main{
+width: 91.5%;
+margin-left: 40;
+}
+.genre li{
+margin-left: 250;
+}
+.genre a {
+font-size: 30;
+}
+.sub-intro a{
+color: #2aacd8;
+font-size: 35;
+}
+/*最新コンテンツの編集*/
+.box{
+border: 2px groove #2aacd8;
+width: 90%;
+height: 270;
+display: flex;
+margin: 0 auto;
+}
+.content-text{
+font-size: 25;
+margin-top: 20;
+text-align: left;
+}
+.content-text a{
+color: #2aacd8;
+text-align: left;
+font-size: 30;
+}
+.content-text a:visited{
+color: #551a55;
+}
+.content-text a:hover{
+color: #2aacd8;
+}
+.detail{
+margin-top: 20;
+text-align: left;
+}
+.detail a{
+text-align: left;
+font-size: 20;
+color: black;
+}
+
+/*よく読まれている記事*/
+.sub-intro{
+text-align: center;
+margin-top: 40;
+}
+.sub-intro a{
+color: #2aacd8;
+font-size: 35;
+}
+.box2{
+border: 2px groove #2aacd8;
+width: 80%;
+height: 270;
+display: flex;
+margin: 0 auto;
+}
+.box2 a{
+text-decoration: none;
+color: black;
+}
+.content-text2{
+font-size: 18;
+margin-top: 20;
+text-align: left;
+}
+.content-text2 a{
+color: #2aacd8;
+font-size:30 ;
+}
+.detail2 {
+font-size: 20;
+text-align: left;
+}
+}
+
+/*合わせて読みたい*/
+.set-read{
+    border-top: #419be0;
+    margin-top: 100;
+   
+}
+.set-read a{ 
+    font-size: 26;
+    color: #2aacd8;
+    text-align: center;   
+    border-top: #419be0;
+}
+/*ヘッダー*/
+.page-header{
+display: flex;
+justify-content: space-between;
+background-color: #2aacd8;
+width: 100%;
+}
+.page-header h1{
+font-size: 45;
+margin-top: 35;
+margin-left: 100;
+}
+.page-header a{
+color: white;
+text-decoration: none;
+}
+.page-header li{
+font-size: 16;
+list-style: none;
+text-decoration-line: none;
+}
+.main-nav{
+display: flex;
+}
+.main-nav a{
+text-decoration: none;
+}
+.main-nav li{
+margin-right: 40;
+font-size: 22;
+list-style: none;
+margin-top: 40;
+margin-right: 30;
+}
+
+/*矢印アイコン*/
+.arrow{
+position: relative;
+display: inline-block;
+padding: 0 0 0 16px;
+color: #000;
+vertical-align: middle;
+text-decoration: none;
+font-size: 15px;
+}
+.arrow::before,
+.arrow::after{
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+content: "";
+vertical-align: middle;
+}
+.sample1::before{
+width: 12px;
+height: 12px;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+background: #419be0;
+}
+.sample1::after{
+left: 5px;
+box-sizing: border-box;
+width: 3px;
+height: 3px;
+border: 3px solid transparent;
+border-left: 3px solid #fff;
+}
+/*トップページ*/
+h1{
+font-size: 36;
+color: #2aacd8;
+margin-top: 20;
+text-align: center;
+}
+#scroll-top{
+text-align: center;
+}
+#scroll-top a{
+color: white;
+}
+
+/*フッターの編集*/
+footer{
+background-color:  #2aacd8;
+position: absolute;
+margin-top: 20;
+margin-bottom: 0;
+width: 100%;
+text-align: left;
+}
+footer p{
+color:white;
+text-align: center;
+text-decoration-line: overline;
+}
+.footer-nav a{
+color: white;
+font-size: 20;
+}
+.footer-nav li{
+list-style: none;
+margin-top: 20;
+}
+h3{
+    color: #6cb4e4;
+    text-align: center;
+    padding: 0.25em;
+    border-top: solid 2px #6cb4e4;
+    border-bottom: solid 2px #6cb4e4;
+    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+
+}
+.small a{
+font-size: 10;
+}
+
+/*カテゴリー*/
+.category{
+background-color: #2aacd8;
+color: white;
+border: 2px black 0.5;
+width: 300;
+margin-top: 40;
+margin: 0 auto;
+}
+.category a {
+font-size: 30;
+}
+h2 .category{
+padding:0 auto;
+font-size: 35;
+}
+.genre li{
+list-style: none;
+margin-top: 20;
+font-size: 30;
+text-align: justify;
+}
+
+/*写真の編集*/
+.prof{
+margin-top: 60;
+text-align: center;
+}
+.myname a{
+color: black;
+font-size: 26;
+margin-top: 10;
+text-align: center;
+text-decoration: none;
+}
+.intro a{
+color: black;
+font-size: 20;
+margin-top: 5;
+text-align: center;
+text-decoration: none;
+}
+
+p{
+line-height: 40px;
+}
+
+strong{
+color: rgb(190, 27, 76);
+}
+
+/*------------------冒頭紹介-----------------------*/
+.theme{
+margin-top: 40;
+}
+.theme h1{
+border-bottom: solid 2px #2aacd8;
+}
+
+.edit-time{
+text-align: left;
+padding-left: 10;
+}
+.pre-index p{
+font-size: 16;
+margin-left: 40;
+text-align: left;
+}
+
+.left p{
+    text-align: left;
+}
+/*-------------------目次------------------------*/
+.contents p{
+    font-size: 18;
+    line-height: 1.9;
+}
+.index {
+padding: 0.5em 1em;
+margin: 2em 0;
+color: black;/*文字色*/
+background: #FFF;
+border: solid 3px #2aacd8;/*線*/
+border-radius: 10px;/*角の丸み*/
+}
+.index li{
+list-style: none;
+text-align: left;
+}
+.index p {
+margin: 0; 
+padding: 0;
+text-align: left;
+font-size: 18;
+}
+
+/*リスト*/
+.ul-content{
+color: rgb(9, 146, 9);
+margin-top: 20px;
+}
+
+ul li{
+text-align: left;
+margin-top: 20;
+margin-left: 60;
+}
+
+.genre_2{
+margin-left: -60;
+}
+
+
+.pagenation{
+    margin-top: 40;
+    margin-bottom: 40;
+    text-align: center;
+}
+
+.pagenation li {
+    display: inline;
+    padding:10px 15px;
+    border:1px #ccc solid;
+    border-radius: 5px / 5px;
+}
+.pagenation a {
+  color: black;
+}
+.def{
+  background-color: darkgray;
+}
+
+
+
+
+/*計算式*/
+.calculate{
+color: maroon;
+font-size: 20px;
+}
+
+h1:after{
+position: absolute;
+content: '';
+top: 100%;
+left: 30px;
+border: 15px solid transparent;
+border-top: 15px solid #e0edff;
+width: 0;
+height: 0;
+}
+
+/*------画像系--------*/
+
+img.image{
+
+float: left;
+margin-bottom: 200;
+margin-top: 200;
+}
+
+img.image_2{
+width: 350;
+height: 475;
+float: left;
+margin-right: 100px;
+}
+
+img.image_3{
+width: 440px;
+}
+
+/*-------------------------------*/
+
+figure.zigyou-betsu{
+float: left;
+padding-right: 20px;
+}

@@ -1,0 +1,324 @@
+<html>
+<head>   
+<link rel="stylesheet" href="../hinagata.css">
+<link rel="shortcut icon" href="../images/icon.jpg" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">        
+<meta charset="utf-8"> 
+<meta name=”viewport” content=”width=device-width”, initial-scale=1”>
+<meta name="description" content="イオンの経営実績を考察してみた　(ストック分析)">         
+<script src="../js/jquery-3.4.1.min.js"></script>
+
+<title>イオンの経営実績を考察してみた　(ストック分析)</title>
+</head>
+<style>
+.red {
+  color: #FF1145;
+}
+</style>
+<body>    
+    <div id="loading">
+     <img src="../images/loading.gif">
+    </div>
+
+    <header class="page-header" >
+      <h1><a href="../index.html">KAZUROG</a></h1>
+      <nav>
+      <ul class="main-nav" >
+      <li><a href="../index.html">ホーム</a></li>
+      <li><a href="../contact.html">お問い合わせ</a></li>
+      <li><a href="../writer.html">ライター</a></li>
+      </ul>
+      </nav>
+    </header>
+     <div class="container">
+      <main>
+        <div class="left">
+          <div class="theme">
+            <h1>イオン企業分析 其の4</h1>
+            </div>
+            
+            <div class="edit-time">
+            <p>2020/5/18</p>
+            </div>
+            <div class="immage">
+                    <img src='images/aeon_logo.png' width="400px" height="250px"></a>
+            </div>
+
+            <div class="pre-index">
+              <p>イオンの企業分析を行っていきます。（4ページ目）</p>
+      　　　  <br>
+            　<p>今回からは、また違った分析手法を行っていきます。                  
+              </p>   
+            </div>
+
+          <div class="index">
+            <h2>目次</h2>
+            <ul>
+                <li>1 ストック分析とは</li>
+                <li>2 自己資本比率</li>
+                <li>3 流動比率</li>
+                <li>4 固定比率</li>
+                <li>5 固定長期適合率</li>  
+            </ul>
+           </div>
+
+    <h1>ストック分析</h1>
+<div>
+    <p>ストック分析とは、<strong>企業の支払い能力を図る</strong>安全性分析の一つであり、
+        そのうち、貸借対照表を用いるもの
+    </p>
+    <p>貸借対照表とは、簡単に言うと、企業の保有している<strong>財産や借金</strong>を
+        細かく記載しているもののこと。下図のような表（実際は、もっと細かい）を使用するが、
+        今回は、分類されたものの合計値を用いて分析する。
+    </p>
+
+    <table border="1">
+        <tr><td>年</td><td>自己資本</td><td>総資本</td><td>流動資産</td><td>流動負債</td><td>固定資産</td><td>純資産</td></tr>
+        <tr><td>2010</td><td>840534</td><td>3785228</td><td>1533085</td><td>1388050</td><td>2252202</td><td>1144434</td></tr>
+        <tr><td>2012</td><td>935738</td><td>4048937</td><td>1372530</td><td>1539334</td><td>2676406</td><td>1282066</td></tr>
+        <tr><td>2014</td><td>1120097</td><td>6815241</td><td>3612778</td><td>3665246</td><td>3202463</td><td>1684569</td></tr>
+        <tr><td>2016</td><td>1141795</td><td>8225874</td><td>4435940</td><td>4531966</td><td>3789934</td><td>1819474</td></tr>
+        <tr><td>2018</td><td>1151562</td><td>9452756</td><td>5474121</td><td>5447642</td><td>3978634</td><td>1916737</td></tr>
+        <tr><td>2020</td><td>1064516</td><td>11062685</td><td>6713352</td><td>6599221</td><td>4349333</td><td>1849278</td></tr>
+        </table>
+        
+
+    <p>使用するデータの関係性は、以下に紹介。</p>
+
+    <ul class="ul-content">
+        <li>自己資本＝株主資本＋その他の包括利益　＆　純資産ー（非支配株主持分＋新株予約権）</li>
+        <li>総資本（資産合計）＝流動資産＋固定資産　＆　純資産＋負債合計</li>
+        <li>流動資産：1年以内に現金化することができる資産</li>
+        <li>固定資産：長期にわたって保有する資産</li>
+        <li>流動負債：1年以内に支払わなければいけない借金</li>
+        <li>固定負債：1年以後に支払わなければいけない借金</li>
+        <li>純資産＝総資本ー負債合計　＆　自己資本＋（非支配株主持分＋新株予約権）</li>
+    </ul>
+
+    <p>これらの指標を用いて、イオンの決算（2月末）時点での資産と負債の割合について
+        分析していく。　分析手法については下記にて紹介。
+    </p>    
+    <p>＊非支配株主持分とは、親会社（イオン）ではなく、子会社に帰属する資産であり、
+        分析では純資産は用いないが、自己資本との区別が難しいためデータ上では記載した。
+    </p>
+    <p>＊新株予約権については、以下に詳しく解説されているため、必要ならば参照</p>
+    <a href="https://mastory.jp/新株予約権">新株予約権</a>
+    <ul>
+        <li>自己資本比率＝自己資本÷総資本×100</li>
+        <li>流動比率＝流動資産÷流動負債×100</li>
+        <li>固定比率＝固定資産÷自己資本×100</li>
+    </ul>
+    
+    <p>計算結果はこちら</p>
+    <table border="1">
+        <tr><td>年</td><td>自己資本比率</td><td>流動比率</td><td>固定比率</td></tr>
+        <tr><td>2010</td><td>22.20563728</td><td>110.4488311</td><td>267.9489467</td></tr>
+        <tr><td>2012</td><td>23.11070782</td><td>89.16388516</td><td>286.0208734</td></tr>
+        <tr><td>2014</td><td>16.43517815</td><td>98.5684999</td><td>285.9094346</td></tr>
+        <tr><td>2016</td><td>13.88053111</td><td>97.88114033</td><td>331.9277103</td></tr>
+        <tr><td>2018</td><td>12.18228842</td><td>100.4860635</td><td>345.4988963</td></tr>
+        <tr><td>2020</td><td>9.622582583</td><td>101.7294617</td><td>408.5737556</td></tr>
+        </table>
+        
+    <p>
+        グラフで表すと...
+    </p>
+
+   
+        <img src="images/BS.jpg" alt="貸借対照表グラフ">
+
+    <p>このグラフは、My_Fundが自己資本比率、Float Percentが流動比率、Stone Percentが固定比率をそれぞれ表している。
+    </p>
+
+    <h3>自己資本比率</h3>
+    
+    <p>
+        この結果から、自己資本比率は、2012年ごろから減少傾向にあることがわかります。
+        自己資本比率とは，総資本に対する自己資本の割合と考えられるため、
+        20％付近占めていたのが、<strong>10年間で10％</strong>ほどまで減少している。
+    </p>
+    <p>
+        また、自己資本比率以外の割合は他人資本、つまり借金を表しているため、
+        <b>自己資本：他人資本＝1：9</b>と考えると恐ろしいなと思ってしまいますね。
+    </p>
+    <p>
+        借金し過ぎなんじゃ...
+    </p>
+
+    <p>
+        実際、小売業の自己資本比率の平均は、40％付近であり、業界全体をみても、優劣は40％付近が
+        基準値となるため、かなり低いことがわかります。
+        ここで、大幅に負債の割合が多いと倒産しないか、借金を返せるのかが心配になってくるため、
+        その内訳をみていきます。
+    </p>
+    
+    
+    
+
+    <p>資産と負債の内訳を見る際には、固定資産・負債と流動資産・負債の関係性を見ていく必要がある。
+        上記でも記述したが、固定資産・負債は長期的で、流動資産・負債は短期的という特徴がある。
+    </p>
+    <p>
+        とりあえず、短期的のほうが重要
+    </p>
+
+    <h3>流動比率</h3>
+
+    <p>まず、流動比率についてだが、一年以内に現金化することができる流動資産と
+        一年以内に支払わなければいけない借金である流動負債との割合のため、
+        100％を超えていれば一年以内に支払わなければいけない借金を1年以内に
+        支払うことができるほどの資産を保有していることを意味している。
+    </p>
+    <p>
+        計算結果を見ると、流動比率は大体<strong>100％付近</strong>であり、
+        ギリギリ支払うことのできる流動資産を保有していることがわかるかと。
+        しかし、決して<b>堅実性の高い企業とは言えないと考えられます。</b>
+    </p>
+
+    <h3>固定比率</h3>
+
+    <p>次に、固定比率についてだが、長期にわたって保有する固定資産と
+        自己資本との割合のため、100％以下だと固定資産を自己資本だけで調達できている
+        ということ。
+    </p>
+    <p>
+        計算結果を見てみると、10年前でも260％ほどだったのにも関わらず、
+        年々上昇しており、2020年では、<strong>400％</strong>を超える結果が出ている。
+    </p>
+    <p>
+        計算間違ったか疑いましたww
+    </p>
+        
+    <p>
+        既に解説した自己資本比率などを見てみても、イオンの財政は、自己資本が少なく負債が多いことがわかります。
+        しかし、将来的な収益が見込める事業では、自己資本だけではなく借金も含めた資金調達、つまり
+        将来のための投資を行うことがある。イオンでは、国際事業やデジタル事業がそれにあたると考えられる。
+        （詳しくは、別記事にて紹介）<a href="aeon_zigyou_syueki_5.html">事業別売上高</a>
+    </p>
+
+    <h3>固定長期適合率</h3>
+
+    <p>その場合、固定比率ではなく<strong>固定長期適合率</strong>を採用するほうが適しているため、分析していく。
+        分析といっても、固定長期適合率は、流動比率と対になっているため、簡単に求めることができる。
+        式で表すと、
+    </p>
+
+    <ul class="calculate">
+        <p>固定長期適合率＝固定資産÷（固定負債＋自己資本）</p>
+    </ul>
+
+    <p>となるが、下の図のような関係性があるため、既に求めているといってよい。</p>
+
+    <img src="images/kotei_chouki_tekigou_percent.png" alt="固定長期適合率" class="image_2">
+
+    <p>この図のように、<b>流動比率が分かっていれば、固定長期適合率も求めることができる。</b>
+        例えば、2020年でいうと、流動比率が101％ほどのため、固定長期適合率は、99％程度と求めることができる。
+        固定比率が100％を超えていても固定長期適合率が100％を切っていれば、財政面では安全だといえるが、
+        イオンの場合は、固定比率が100％を大幅に超えており、固定長期適合率はギリギリ100％を切っているため、
+        <b>財政難というほどではないが、完全に安心できる財政とは言えないかと。</b>
+    </p>
+
+    <p>以上から、基本的に負債の割合が多いことがわかったが、次ページでは、その原因は何なのかを
+        貸借対照表をさらに細かく分析していく。
+    </p>
+</div>
+
+<ol class="pagenation">
+<li><a href="aeon_stock_2.html">次へ</a></li>
+</ol>
+
+<div class="set-read">
+<a>
+ 合わせて読みたい記事 
+</a>
+     </div>
+        <div class="box">
+          <p><a href="aeon_zigyou_syueki.html">
+          <img src='images/logo/aeon_logo.png'aligh="bottom" width="320px" height="180px"></a>
+            2020/5/20
+          </p>
+          </a>
+          <span>
+            <p class="content-text">
+              <a href="aeon_zigyou_syueki.html">
+                [イオン・企業分析]　事業別営業利益を詳しく調べてみた！
+              </a>  
+            </p>
+          <div class="detail">
+            <a href="aeon_zigyou_syueki.html">
+              イオンのGMS事業の実績とは？
+            </a>  
+          </div>  
+          </span>
+       </div><!--content-box終了!-->
+
+     <div class="box">
+      <p><a href="aeon_kabunusi_soukai.html">
+      <img src='images/logo/aeon_logo.png'aligh="bottom" width="320px" height="180px"></a>
+        2020/5/22 
+      </p>
+      </a>
+      <span>
+        <p class="content-text">
+          <a href="aeon_kabunusi_soukai.html">
+            [イオン・決算報告]　2020年度決算報告を簡単にまとめてみた！
+          </a>  
+        </p>
+      <div class="detail">
+          <a href="aeon_kabunusi_soukai.html">
+              2020年度のイオン株主総会が行われましたが、今年度は新型コロナウイルス<br>
+              による市場変化が予想されるなか...
+            </a>  
+      </div>  
+      </span>
+   </div><!--content-box終了!-->
+
+
+  
+         
+  </div>　　
+  </main>
+  <aside>
+   <div class="right">
+  
+
+      <h2 class="category"><a>カテゴリー</a></h2>
+      <ul class="genre">
+      <li><a href="../index.html" class="arrow sample1">書評</a></li>
+      <li><a href="../index.html" class="arrow sample1">プログラミング</a></li>
+      <li><a href="../index.html" class="arrow sample1">映画レビュー</a></li>
+      <li><a href="../index.html" class="arrow sample1">商品レビュー</a></li>  
+      </ul>  
+      
+    <div class="prof">
+      <img src="../images/nozi.png" width="200" height="200">
+      <div class="myname"><a>ぴーたい</a></div>
+      <div class="intro"><a>少しでも有益な情報を提供できたら幸いです</a></div>
+     </div>
+          
+  </div>　
+  </aside>　
+  </div>
+           
+    <footer>
+    <div class="whole-footer">
+        <h4 id="scroll-top"><a href="../index.html">トップへ戻る</a></h4>
+      <div>
+      <nav>
+        <ul class="footer-nav">
+        <li><a href="../index.html"class="arrow sample1">ホーム</a></li>
+        <li><a href="../contact.html"class="arrow sample1">お問い合わせ</a></li>
+        <li><a href="../policy.html"class="arrow sample1">プライバシーポリシー</a></li>
+        </ul>    
+      </nav>
+      </div>
+        <p><small><a>&copy; 2020 KAZUROG<a></small></p> 
+    </div><!--whole-footer終了!-->
+    </footer>
+  <script>
+  jQuery(window).on("load", function(){
+  jQuery("#loading").hide();
+  });
+  </script>
+</body>
+</html>

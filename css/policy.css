@@ -1,0 +1,134 @@
+@charset "UTF-8";
+html{
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.7;
+}
+body{
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+/*ヘッダーの編集*/
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2aacd8;
+    width: 100%;
+  }
+  .page-header h1{
+    font-size: 36;
+    margin-top: 35;
+    margin-left: 100;
+  }
+  .page-header a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .page-header li{
+    font-size: 20;
+    list-style: none;
+    text-decoration-line: none;
+  }
+  .main-nav{
+    display: flex;
+  }
+  .main-nav a{
+    text-decoration: none;
+  }
+  .main-nav li{
+    margin-right: 60;
+    font-size: 16;
+    list-style: none;
+    margin-top: 35;
+    margin-right: 40;
+  }
+  /*矢印アイコンの生成*/
+  
+  .arrow{
+      position: relative;
+      display: inline-block;
+      padding: 0 0 0 16px;
+      color: #000;
+      vertical-align: middle;
+      text-decoration: none;
+      font-size: 15px;
+  }
+  .arrow::before,
+  .arrow::after{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      content: "";
+      vertical-align: middle;
+  }
+  .sample1::before{
+      width: 12px;
+      height: 12px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: #419be0;
+  }
+  .sample1::after{
+      left: 5px;
+      box-sizing: border-box;
+      width: 3px;
+      height: 3px;
+      border: 3px solid transparent;
+      border-left: 3px solid #fff;
+  }
+  h1{
+      font-size: 36;
+      color: #2aacd8;
+      margin-top: -20;
+      text-align: center;
+  }
+  /*フッターの編集*/
+  
+  footer{
+    background-color:  #2aacd8;
+    position: absolute;
+    margin-top: 20;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: left;
+  }
+  footer p{
+    color:white;
+    text-align: center;
+    text-decoration-line: overline;
+  }
+  .footer-nav a{
+    color: white;
+    font-size: 20;
+  }
+  
+  .footer-nav li{
+    font-size: 20;
+    list-style: none;
+    margin-top: 20;
+  }
+  h3{
+    background-color: #7bcae4;
+    text-align: center;
+    color: white;
+  }
+.naiyou p{
+    text-align: left;
+    margin-left: 60;
+    margin-right: 60;
+    margin-top: 40;
+}  
+.naiyou h2{
+  color: #2aacd8;
+}

@@ -1,0 +1,258 @@
+<html>
+<head>   
+<link rel="stylesheet" href="../hinagata.css">
+<link rel="shortcut icon" href="../images/icon.jpg" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">        
+<meta charset="utf-8"> 
+<meta name=”viewport” content=”width=device-width”, initial-scale=1”>
+<meta name="description" content="イオンの経営実績を考察してみた　(取引収益性分析)">         
+<script src="../js/jquery-3.4.1.min.js"></script>
+
+<title>イオンの経営実績を考察してみた　(取引収益性分析)</title>
+</head>
+<style>
+.red {
+  color: #FF1145;
+}
+</style>
+<body>    
+    <div id="loading">
+     <img src="../images/loading.gif">
+    </div>
+
+    <header class="page-header" >
+      <h1><a href="../index.html">KAZUROG</a></h1>
+      <nav>
+      <ul class="main-nav" >
+      <li><a href="../index.html">ホーム</a></li>
+      <li><a href="../contact.html">お問い合わせ</a></li>
+      <li><a href="../writer.html">ライター</a></li>
+      </ul>
+      </nav>
+    </header>
+     <div class="container">
+      <main>
+        <div class="left">
+          <div class="theme">
+              <h1>イオン企業分析 其の2</h1>
+              </div>
+              
+              <div class="edit-time">
+              <p>2020/5/15</p>
+              </div>
+              <div class="immage">
+                      <img src='images/aeon_logo.png' width="400px" height="250px"></a>
+              </div>
+  
+              <div class="pre-index">
+                <p>イオンの企業分析を行っていきます。（2ページ目）</p>
+              </div>
+  
+            <div class="index">
+              <h2>目次</h2>
+              <ul>
+                  <li>1 取引収益性分析とは</li>
+                  <li>2 売上高総利益率</li>
+                  <li>3 売上高営業利益率</li>
+                  <li>4 売上高経常利益率</li>  
+              </ul>
+             </div>
+          
+          <h1>取引収益性分析</h1>
+          <div class="contents">
+          <p>   この分析手法は、<strong>売上高と利益とを比較するもの</strong>だが、簡単に言えば、売り上げに対する利益の割合を求めるものだが、利益の見方によって
+              分かることも違うため、様々な比較が可能といえます。
+          </p>
+          <p>今回の比較対象は3つで、それぞれ売上高総利益率、売上高営業利益率、売上高経常利益率を分析していきます。</p>
+          <p>使用するデータの関係性は、下記に示す通り。</p>
+  
+          <ul class="ul-content">
+              <li>総利益＝売上高から売上原価を差し引いたもの</li>
+              <li>営業利益＝営業収益合計(売上高＋金融事業などにおける営業収益)から営業原価合計(売上原価+α)と販売費及び一般管理費を差し引いたもの</li>
+              <li>経常利益＝営業利益に営業外収益と営業外費用を含めたもの</li>
+          </ul>
+  
+          <!--<img scr="images/取引収益性.jpg" alt="取引収益性">-->
+  
+          <table border="1" align="center">
+              <tr><td>年</td><td>売上高総利益率</td><td>売上高営業利益率</td><td>売上高経常利益率</td></tr>
+              <tr><td>2010</td><td>28.03258663</td><td>2.866046508</td><td>2.866156577</td></tr>
+              <tr><td>2012</td><td>27.02808468</td><td>4.207670435</td><td>4.563953838</td></tr>
+              <tr><td>2014</td><td>27.00534055</td><td>3.050787736</td><td>3.147277137</td></tr>
+              <tr><td>2016</td><td>27.18673342</td><td>2.446094613</td><td>2.483371306</td></tr>
+              <tr><td>2018</td><td>27.84534034</td><td>2.849008755</td><td>2.896417037</td></tr>
+              <tr><td>2020</td><td>27.62749295</td><td>2.871659995</td><td>2.742393325</td></tr>
+              </table>
+  
+          <img src="images/profit.jpg" alt="取引収益性分析">
+              
+  
+          <h3>売上高総利益率</h3>
+          <p>分析結果を見てみると、10年間はあまり変動していないことがよくわかるかと。（＊単位に注意）
+              売上高と総利益率は年々上昇しているため、<b>売上高が上がればそれに比例するように総利益も上がっている</b>ことがわかります。
+          </p>
+          <p>
+            しかし、売上高と総利益のデータを見てみると、近年では、5－10年前と比較すると伸び悩んでいるのでは？
+          </p>
+  
+          <h3>売上高営業利益率</h3>
+          <p>こちらは売上高総利益率とは違って、売上と比例的な関係になっていないことがわかります。
+              数値が高いほど営業活動の効率が良いとされているデータですが、
+          </p>
+          <p>
+              既に、売上原価にその原因はないということが分かっているため、営業収益、営業原価合計、販売費及び一般管理費に
+              売上と比例関係にならない原因があるのではないか？と考えられるため、それらのデータも分析していきます。
+          </p>
+  
+          <img src="images/eigyou_rieki.jpg" alt="営業利益内訳">
+  
+          <p>上記のように、営業利益の内訳である営業収益合計、営業原価合計、販売費及び一般管理費
+              と売上高とを比較していく。その結果は下図へ
+          </p>
+          
+          <img src="images/eigyou_rieki_percent.jpg" alt="営業利益率">
+  
+          <p>グラフで表すと、下図のようになる。</p>
+          
+          <img src="images/saleprofit.jpg" alt="営業利益率グラフ">
+  
+  
+          <p>この結果から、売上原価合計(緑線)については、<strong>売上高と比例</strong>しており
+              営業利益と売上高が比例関係にないことの原因とはならないことがわかります。
+          </p>
+  
+          <p> 営業収益合計は、総合金融事業における営業収益とその他の営業収益の合計値だが、
+              営業収益と売上高の比率(以降、売上高営業収益率)は、高いほど営業利益も上昇する。
+          </p>
+          <p>
+              よって、2012年においては、売上高営業収益率が明らかに高いため、売上高営業利益率も
+              他と比べても大きく上昇している。つまり、<strong>営業収益合計において、何らかの違いがあった</strong>と
+              とらえられるのでは？
+          </p>
+          <p>
+              また、販売費及び一般管理費においては、費用のため少なければ少ないほど良いが、<b>近年は増加傾向</b>にあり
+              (筆者は最低賃金の増加が原因だと考える)、営業利益に打撃を与えている。
+              この点においても、2012年は他と比べても明らかに少ないことがわかりますね。
+          </p>
+  
+          <p>よって、各年の<b>営業収益合計と販売費及び一般管理費が営業利益に
+              影響を与えるほど、各年でばらつきがあることがわかったかと。</b>
+              つまり、イオンはいかに販売費及び一般管理費を減らしつつ営業収益合計を
+              上昇させるかを考えなければならないとわかりました。
+          </p>
+  
+  
+          <h3>売上高経常利益率</h3>
+          <p>この指標は、売上高営業利益率と違って、<strong>営業外収益</strong>が関わってくるが、
+              営業利益と経常利益を比べてみても大差はないため、イオンの経営において、
+              営業外収益は、利益に大きな影響を与えるものではないと判断し、割愛する。
+          </p>
+  
+          <P>以上が今回行った取引収益性の分析結果だが、<b>2012年が他と比べても非常に
+              効率的な経営活動を行っていたこと</b>がわかった。
+          </P>
+          <p>
+            じゃあ、イオンって2012年に何があったのだろうか？　疑問に思うだろうが、また、別の機会に紹介していく
+          </p>
+          <p>次ページにて、資本収益性の分析を行っていく。</p>
+        </div>
+        <ol class="pagenation">
+          <!--<li><a href="">前へ</a></li>   -->
+          <li><a href="aeon_syueki.html">1</a></li>
+          <li class="def"><a href="aeon_syueki_2.html">2</a></li>
+          <li><a href="aeon_syueki_3.html">3</a></li>
+          <li><a href="aeon_syueki_2.html">次へ</a></li>
+        </ol>
+
+        <div class="set-read">
+          <a>
+             合わせて読みたい記事 
+          </a>
+      </div>
+          <div class="box">
+                  <p><a href="aeon_syueki_3.html">
+                  <img src='images/aeon_logo.png'aligh="bottom" width="320px" height="180px"></a>
+                  2020/5/8 
+                  </p>
+                </a>
+                  <span>
+                      <p class="content-text">
+                           <a href="aeon_syueki_3.html">
+                            [企業分析]イオンの資本収益性について分析してみた！
+                           </a>  
+                      </p>
+                      <div class="detail">
+                        <a href="aeon_syueki_3.html">
+                        イオングループの分析結果をまとめてます。
+                        </a>  
+                      </div>  
+                   </span>
+                  </div><!--content-box終了!-->
+                  <div class="box">
+                    <p><a href="aeon_stock.html">
+                    <img src='images/aeon_logo.png'aligh="bottom" width="320px" height="180px"></a>
+                    2020/5/8 
+                    </p>
+                  </a>
+                    <span>
+                        <p class="content-text">
+                             <a href="aeon_stock.html">
+                              [企業分析]イオンをストック分析してみた！
+                             </a>  
+                        </p>
+                        <div class="detail">
+                          <a href="aeon_stock.html">
+                          イオングループの分析結果をまとめてます。
+                          </a>  
+                        </div>  
+                     </span>
+                    </div><!--content-box終了!-->
+
+  
+         
+  </div>　　
+  </main>
+  <aside>
+   <div class="right">
+  
+
+      <h2 class="category"><a>カテゴリー</a></h2>
+      <ul class="genre">
+      <li><a href="../index.html" class="arrow sample1">書評</a></li>
+      <li><a href="../index.html" class="arrow sample1">プログラミング</a></li>
+      <li><a href="../index.html" class="arrow sample1">映画レビュー</a></li>
+      <li><a href="../index.html" class="arrow sample1">商品レビュー</a></li>  
+      </ul>  
+      
+    <div class="prof">
+      <img src="../images/nozi.png" width="200" height="200">
+      <div class="myname"><a>ぴーたい</a></div>
+      <div class="intro"><a>少しでも有益な情報を提供できたら幸いです</a></div>
+     </div>
+          
+  </div>　
+  </aside>　
+  </div>
+           
+    <footer>
+    <div class="whole-footer">
+        <h4 id="scroll-top"><a href="../index.html">トップへ戻る</a></h4>
+      <div>
+      <nav>
+        <ul class="footer-nav">
+        <li><a href="../index.html"class="arrow sample1">ホーム</a></li>
+        <li><a href="../contact.html"class="arrow sample1">お問い合わせ</a></li>
+        <li><a href="../policy.html"class="arrow sample1">プライバシーポリシー</a></li>
+        </ul>    
+      </nav>
+      </div>
+        <p><small><a>&copy; 2020 KAZUROG<a></small></p> 
+    </div><!--whole-footer終了!-->
+    </footer>
+  <script>
+  jQuery(window).on("load", function(){
+  jQuery("#loading").hide();
+  });
+  </script>
+</body>
+</html>
